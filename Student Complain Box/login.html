@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('D.jpg'); /* Replace with your actual image URL or file path */
+    background-position-y: center;
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    border: 3px solid #f1f1f1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+  }
+  
+  .form-container form {
+    padding: 0;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(215, 215, 230);
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #131337;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .register-btn {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .register-btn a {
+    text-decoration: none;
+    color: #131337;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="form-container">
+    <div class="imgcontainer">
+      <img src="image.png" alt="Centurion University" class="centurion University" width="150">
+    </div>
+
+    <form action="login_action.php" method="post">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="register-btn">
+      <p>Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

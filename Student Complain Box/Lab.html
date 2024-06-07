@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complainbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('D.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .menu {
+            background-color: #493939;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+        .menu li {
+            margin: 0 5px;
+        }
+        .menu li.Complaint,
+        .menu li.active {
+            background-color: none;
+        }
+        .menu li:hover {
+            background-color: #413737;
+        }
+        .menu li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .menu li.Complaint ul {
+            display: none;
+            position: -webkit-sticky;
+            background-color: #070505;
+            box-shadow: 0 8px 16px 0 rgba(80, 72, 72, 0.2);
+            z-index: 1;
+            padding: 0;
+            margin-top: 5px;
+        }
+        .menu li.Complaint ul li {
+            display: block;
+            margin: 0; /* Remove the default margin */
+        }
+        .menu li.Complaint:hover ul {
+            display: block;
+        }
+
+        .content {
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], select, textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+    background-color: #4a3333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .input-group {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CENTURION UNIVERSITY</h1>
+        <h2>● School Of Engineering & Technology, Paralakhemundi ●</h2>
+    </div>
+    <ul class="menu">
+        <li class="active"><a href="file:///F:/CUTM/complainbox.html">Register Your complaints</a></li>
+        <li class="active"><a href=file:///F:/CUTM/Timetable.html>Time Table</a></li>
+        <li class="active"><a href=file:///F:/CUTM/Other.html>Other</a></li>
+    </ul>
+
+    <div class="container">
+        <h2>Submit a Complaint About LAB</h2>
+        <form action="/submit_complaint.php" method="post">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Your full name.." required>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" required>
+                </div>
+            
+                <div class="input-group">
+                    <label for="contact"><b>Contact Number</b></label>
+                    <input type="text" placeholder="Enter Contact Number" name="contact" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="academic_year"><b>Academic year</b></label>
+                    <select name="academic_year" required>
+                        <option value="">Select Academic Year</option>
+                        <option value="2021-22">2021-22</option>
+                        <option value="2022-23">2022-23</option>
+                        <option value="2023-24">2023-24</option>
+                        <option value="2024-25">2024-25</option>
+                        <option value="2025-26">2025-26</option>
+                        <option value="2026-27">2026-27</option>
+                        <option value="2027-28">2027-28</option>
+                    </select>
+                </div>
+
+                
+
+                <div class="input-group">
+                    <label for="section"><b>Section</b></label>
+                    <select name="section" required>
+                        <option value="">Select Section</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="Builing Name"><b>Builing Name</b></label>
+                    <select name="Builing_Name" required>
+                        <option value="">Select Builing Name</option>
+                        <option value="CRC-1">CRC-1</option>
+                        <option value="CRC-2">CRC-2</option>
+                    </select>
+                </div>
+
+                
+
+                <div class="input-group">
+                    <label for="Lab"><b>Lab</b></label>
+                    <select name="Lab" required>
+                        <option value="">Select Lab</option>
+                        <option value="CSE 1">CSE 1</option>
+                        <option value="CSE 2">CSE 2</option>
+                        <option value="CSE 3">CSE 3</option>
+                        <option value="CSE 4">CSE 4</option>
+                        <option value="CC LAB">CC LAB</option>
+                        <option value="ECE 1">ECE 1</option>
+                        <option value="ECE 2">ECE 2</option>
+                        <option value="Power System Lab">Power System Lab</option>
+                        <option value="Electrical Machine Lab">Electrical Machine Lab</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="System Number">System Number</label>
+            <input type="text" id="System Number" name="System Number" placeholder="Enter Your System Number" required>
+
+
+
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject of your complaint.." required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your complaint.." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

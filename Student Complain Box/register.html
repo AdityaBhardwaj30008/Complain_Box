@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Page</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('D.jpg'); /* Replace with your actual image URL or file path */
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    border: 3px solid #f1f1f1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 (square) */
+  }
+  
+  .form-container form {
+    padding: 0;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+
+  .input-group {
+    width: 45%; /* Adjust width as needed */
+  }
+
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .input-group input, .input-group select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(215, 215, 230);
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #131337;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .login-btn {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .login-btn a {
+    text-decoration: none;
+    color: #131337;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="form-container">
+    <div class="imgcontainer">
+      <img src="image.png" alt="Centurion University" class="centurion University" width="150">
+    </div>
+
+    <form action="register_action.php" method="post">
+      <div class="form-row">
+        <div class="input-group">
+          <label for="name"><b>Full Name</b></label>
+          <input type="text" placeholder="Enter Full Name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-group">
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="contact"><b>Contact Number</b></label>
+          <input type="text" placeholder="Enter Contact Number" name="contact" required>
+        </div>
+
+
+        
+      </div>
+
+      <div class="form-row">
+
+        <div class="input-group">
+          <label for="school"><b>School Name</b></label>
+          <select name="school" required>
+            <option value="">Select School</option>
+            <option value="School of Engineering & Technology, Bhubaneswar">School of Engineering & Technology, Bhubaneswar</option>
+            <option value="School of Management, Bhubaneswar">School of Management, Bhubaneswar</option>
+            <option value="School of Applied Sciences, Bhubaneswar">School of Applied Sciences, Bhubaneswar</option>
+            <option value="School of Architecture Planning & Design, Bhubaneswar">School of Architecture Planning & Design, Bhubaneswar</option>
+            <option value="School of Engineering & Technology, Bhubaneswar">School of Engineering & Technology, Bhubaneswar</option>
+            <option value="School of Vocational Education & Training, Bhubaneswar">School of Vocational Education & Training, Bhubaneswar</option>
+            <option value="School of Pharmacy and Life Sciences, Bhubaneswar">School of Pharmacy and Life Sciences, Bhubaneswar</option>
+            <option value="School of Media & Communication, Bhubaneswar">School of Media & Communication, Bhubaneswar</option>
+            <option value="School of Paramedics & Allied Health Sciences, Bhubaneswar">School of Paramedics & Allied Health Sciences, Bhubaneswar</option>
+            <option value="School of Forensic Sciences, Bhubaneswar">School of Forensic Sciences, Bhubaneswar</option>
+            <option value="School of Applied Sciences, Bolangir">School of Applied Sciences, Bolangir</option>
+            <option value="School of Applied Sciences, Rayagada">School of Applied Sciences, Rayagada</option>
+            <option value="School of Vocational Education & Training, Rayagada">School of Vocational Education & Training, Rayagada</option>
+            <option value="School of Management, Paralakhemundi">School of Management, Paralakhemundi</option>
+            <option value="School Of Engineering & Technology, Paralakhemundi">School Of Engineering & Technology, Paralakhemundi</option>
+            <option value="M.S.Swaminathan School of Agriculture, Paralakhemundi">M.S.Swaminathan School of Agriculture, Paralakhemundi</option>
+            <option value="Centurion Public School, Paralakhemundi">Centurion Public School, Paralakhemundi</option>
+            <option value="School of Vocational Education & Training, Paralakhemundi">School of Vocational Education & Training, Paralakhemundi</option>
+            <option value="School Of Applied Sciences, Paralakhemundi">School Of Applied Sciences, Paralakhemundi</option>
+            <option value="School of Paramedics & Allied Health Science, Paralakhemundi">School of Paramedics & Allied Health Science, Paralakhemundi</option>
+            <option value="School of Engineering & Technology, Vizianagaram">School of Engineering & Technology, Vizianagaram</option>
+            <option value="School of Paramedics & Allied Health Science, Vizianagaram">School of Paramedics & Allied Health Science, Vizianagaram</option>
+            <option value="School of Pharmacy, Bolangir">School of Pharmacy, Bolangir</option>
+            <option value="School of Pharmacy, Rayagada">School of Pharmacy, Rayagada</option>
+            <option value="Centurion-WISTA-West Zone">Centurion-WISTA-West Zone</option>
+            <option value="Centurion University-AP">Centurion University-AP</option>
+            <option value="Centurion University- Odisha">Centurion University- Odisha</option>
+            <option value="School of Management, Ext-I">School of Management, Ext-I</option>
+            <option value="School of Management, Ext-II">School of Management, Ext-II</option>
+            <option value="School of Management, Ext-III">School of Management, Ext-III</option>
+            <option value="Centurion University Ph.D Program">Centurion University Ph.D Program</option>
+            <option value="School of Social Sciences, Bhubaneswar">School of Social Sciences, Bhubaneswar</option>
+            <option value="School of Social Sciences, Paralakhemundi">School of Social Sciences, Paralakhemundi</option>
+            <option value="School of Agriculture & Bio Engineering, Paralakhemundi">School of Agriculture & Bio Engineering, Paralakhemundi</option>
+            <option value="School of Media & Communication, Paralakhemundi">School of Media & Communication, Paralakhemundi</option>
+            <option value="School of Management, Vizianagaram">School of Management, Vizianagaram</option>
+            <option value="School of Pharmacy, Balasore">School of Pharmacy, Balasore</option>
+            <option value="School of Hospitality & Wellness, Bhubaneswar">School of Hospitality & Wellness, Bhubaneswar</option>
+            <option value="School of Vocational Education & Training, Balasore">School of Vocational Education & Training, Balasore</option>
+            <option value="School of Paramedics & Allied Health Sciences, Rayagada">School of Paramedics & Allied Health Sciences, Rayagada</option>
+            <option value="School of Hospitality & Wellness, Paralakhemundi">School of Hospitality & Wellness, Paralakhemundi</option>
+            <option value="School of Hospitality & Wellness, Vizianagaram">School of Hospitality & Wellness, Vizianagaram</option>
+            <option value="School of Paramedics & Allied Health Sciences, Balasore">School of Paramedics & Allied Health Sciences, Balasore</option>
+            <option value="School of Maritime Studies, Bhubaneswar">School of Maritime Studies, Bhubaneswar</option>
+            <option value="School of Applied Sciences, Chhatrapur">School of Applied Sciences, Chhatrapur</option>
+            <option value="International Student Exchange">International Student Exchange</option>
+            <option value="School of Law, Bhubaneswar">School of Law, Bhubaneswar</option>
+            <option value="School of Veterinary & Animal Sciences, Paralakhemundi">School of Veterinary & Animal Sciences, Paralakhemundi</option>
+            <option value="Centurion University Ph.D Program, Vizianagaram">Centurion University Ph.D Program, Vizianagaram</option>
+            <option value="School of Veterinary & Animal Sciences, Paralakhemundi">School of Veterinary & Animal Sciences, Paralakhemundi</option>
+            <option value="Centurion University Ph.D Program, Vizianagaram">Centurion University Ph.D Program, Vizianagaram</option>
+            <option value="School of Vocational Education and Training, Chhatrapur">School of Vocational Education and Training, Chhatrapur</option>
+            <option value="School of Paramedics & Allied Health Sciences, Bolangir">School of Paramedics & Allied Health Sciences, Bolangir</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="branch"><b>Branch</b></label>
+          <select name="branch" required>
+            <option value="">Select Branch</option>
+            <option value="EEE">EEE (Electrical & Electronics Engineering)</option>
+            <option value="ECE">ECE (Electronics & Communication Engineering)</option>
+            <option value="CSE">CSE (Computer Science & Engineering)</option>
+          </select>
+        </div>
+        
+      </div>
+
+      <div class="form-row">
+        <div class="input-group">
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+        <div class="input-group">
+          <label for="repsw"><b>Re-enter Password</b></label>
+          <input type="password" placeholder="Re-enter Password" name="repsw" required>
+        </div>
+      </div>
+          
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="login-btn">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

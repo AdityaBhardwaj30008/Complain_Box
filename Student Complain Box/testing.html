@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complainbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('D.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .menu {
+            background-color: #f2f2f2;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+        .menu li {
+            margin: 0 5px;
+        }
+        .menu li.Complaint,
+        .menu li.active {
+            background-color: #007bff;
+        }
+        .menu li:hover {
+            background-color: #0056b3;
+        }
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .menu li.Complaint ul {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .menu li.Complaint ul li {
+            display: block;
+        }
+        .menu li.Complaint:hover ul {
+            display: block;
+        }
+
+        .content {
+            margin: 20px;
+        }
+
+        /* Added CSS animation */
+        @media (min-width: 768px) {
+            .navisec .navbar-nav {
+                float: none;
+                margin: 0 auto;
+            }
+
+            .navisec .navbar-nav>li {
+                float: none;
+                display: inline-block;
+            }
+
+            .navisec ul li a{
+                padding:10px 17px;
+            }
+
+            .navisec .navbar-nav>li:first-child a{
+                padding-left:0;
+            }
+        }
+
+        @media (max-width:767px) {
+            .pdleft {
+                padding-left: 15px;
+            }
+            .pdright {
+                padding-right: 15px;
+            }
+            .pdtop {
+                padding-top: 15px;
+            }
+            .pdbottom {
+                padding-bottom: 15px;
+            }
+            .nopadding {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .txt-center {
+                text-align: center;
+            }
+            .logo .txt-center {
+                margin: 5px 0;
+            }
+            .naviarea .navbar-nav>li {
+                width: 100%;
+                margin: 3px 0;
+            }
+            .naviarea .navbar-default .navbar-collapse {
+                margin-top: 52px;
+                border: none;
+            }
+            .topheader .navbar-default .navbar-toggle {
+                display: none;
+            }
+            .topheader .navbar-default .collapse {
+                display: block;
+                text-align: center;
+                border-top: none;
+            }
+            .topheader .navbar-default .navbar-nav>li>a {
+                display: inline-block;
+            }
+            .text-right.top-rigt-sec {
+                text-align: center;
+            }
+            .midheader {
+                padding: 15px 0;
+            }
+            .site-function {
+                position: initial;
+                height: auto;
+                margin: 10px 0;
+            }
+            .site-function ul li {
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .copyright {
+                text-align: center;
+            }
+            .emp-cornr li {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                margin: 2px 0;
+            }
+            ul.emp-cornr li a{
+                float:none;
+                border-right:none;
+            }
+            .midheader figure.pull-left{
+                float:none!important;
+                text-align: center;
+                margin: 0 0 10px;
+            }
+            .navbar-toggle .icon-bar{
+                background:#fff;
+            }
+            .box-lising ul {
+                display: inline-block;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CENTURION UNIVERSITY</h1>
+        <h2>● School Of Engineering & Technology, Paralakhemundi ●</h2>
+    </div>
+    <ul class="menu">
+        <li class="Complaint">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Complaint<span class="caret">&nbsp;</span></a>
+            <ul class="dropdown-menu">
+                <li><a href=file:///F:/CUTM/ClassRoom.html>CLASS ROOM</a></li>
+                <li><a href=file:///F:/CUTM/lab.html>LAB</a></li>
+            </ul>
+        </li>
+        <li class="active"><a href=file:///F:/CUTM/Timetable.html>Time Table</a></li>
+        <li class="active"><a href=file:///F:/CUTM/feedback.html>Feedback</a></li>
+        <li class="active"><a href=file:///F:/CUTM/Other.html>Other</a></li>
+    </ul>
+
+
+    <section class="banner">
+
+        <div class="container">
+    
+                            <div class="col-xs-12 col-sm-9 col-md-9">
+                <div class="row">
+                                    <h1>Online Complaint Management System</h1>
+                    <h3>IF YOU ARE FACING ISSUE AT LAB AND CLASS ROOM</h3>
+
+                </div>
+            </div>
+    
+            <div class="box-lising">
+                <ul>
+                    <li class="orange"><a href="file:///F:/CUTM/complainbox.html" class="btn btn-info btn-lg hvr-bounce-in"
+                            data-toggle="modal" data-target="#ragister-popup"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i><span>Register Your Complaint</span></a>
+                    </li>
+    
+                    <li
+    </style>
+</head>
+<body>
